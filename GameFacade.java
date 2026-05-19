@@ -1,6 +1,7 @@
 package chess.facade;
 
 import chess.archive.*;
+import chess.game.AbstractGame;
 import chess.command.*;
 import chess.game.*;
 import chess.model.*;
@@ -233,4 +234,8 @@ public class GameFacade {
         System.out.println("║  quit                退出程序                ║");
         System.out.println("╚══════════════════════════════════════════════╝");
     }
+
+    /** 返回当前游戏实例（GUI 用于直接读取状态） */
+    public AbstractGame getCurrentGame() { return game; }
+
 }
