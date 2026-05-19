@@ -1,7 +1,6 @@
 # GoGame
 ---
 
-```markdown
 # 棋类对战平台 — Gomoku & Go
 
 > 面向对象程序设计课程大作业
