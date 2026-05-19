@@ -193,7 +193,7 @@ saves/
 
 ## 演示视频
 
-[清华云盘链接]（待上传）
+清华云盘链接：https://cloud.tsinghua.edu.cn/f/cb590192b63d40a9b65b/
 
 ---
 
