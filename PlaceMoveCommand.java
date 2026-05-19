@@ -1,6 +1,7 @@
 package chess.command;
 
 import chess.model.Board;
+import chess.ui.BoardAreaComponent;
 import chess.model.Position;
 import chess.model.Stone;
 
@@ -47,7 +48,8 @@ public class PlaceMoveCommand implements MoveCommand {
 
     @Override
     public String describe() {
-        return color.getSymbol() + " 落子于 " + pos
+        String coord = String.valueOf(BoardAreaComponent.colIndexToLabel(pos.col)) + (pos.row + 1);
+        return color.getSymbol() + " 落子于 " + coord
                 + (captured.isEmpty() ? "" : "，提子 " + captured.size() + " 枚");
     }
 
